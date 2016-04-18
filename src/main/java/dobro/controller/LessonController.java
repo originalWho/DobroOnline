@@ -1,12 +1,18 @@
 package dobro.controller;
 
+import dobro.service.LessonService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * Created by Artur on 4/18/16.
  */
 @Controller
-@RequestMapping("/lesson")
 public class LessonController {
+    private LessonService lessonService;
+
+    @Autowired
+    public void setLessonService(LessonService lessonService) {
+        this.lessonService = lessonService;
+    }
 }
