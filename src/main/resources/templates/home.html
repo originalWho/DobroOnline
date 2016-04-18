@@ -1,9 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Dobro</title>
+    <!--/*/ <th:block th:include="fragments/header :: head"></th:block> /*/-->
 </head>
 <body>
-    <h1>Congrats!</h1>
+
+<video autoplay="autoplay" id="bgvid" loop="loop" preload="auto">
+    <source src="../static/video/bgvideo.mov" th:src="@{/video/bgvideo.mov}" type="video/quicktime"/>
+</video>
+
+<div style="float: right; margin-right: 1%; margin-top: 1%; color: white">
+    Sign in |
+    Sign up
+</div>
+
+<div style="margin-left: 20%; margin-top:20%; font-size: 100px; float: left; color: white;" align="center">
+    <span id="message">RUSSIAN</span>
+</div>
+<div style="width:20%; margin-right: 10%; margin-top: 20%; float: right">
+    <form role="form" action="#" th:action="@{/}" th:object="${user}" method="post">
+        <div class="form-group">
+            <input type="text" class="form-control" id="usr" placeholder="Name"/>
+        </div>
+
+        <div class="form-group">
+            <input type="email" class="form-control" id="email" placeholder="E-mail"/>
+        </div>
+
+        <div class="form-group">
+            <input type="password" class="form-control" id="pwd" placeholder="Password"/>
+        </div>
+
+        <button type="submit" class="btn btn-default">Join for free</button>
+    </form>
+</div>
+
+<script>
+function nextMsg() {
+    var msg = messages.pop();
+    if (msg == messages[messages.length - 1]) {
+        $('#message').html("DOBRO").fadeIn(200);
+    } else {
+        $('#message').html(msg).fadeIn(300).delay(2000).fadeOut(200, nextMsg);
+    }
+}
+
+var messages = [
+    "LEARN",
+    "IMMERSE",
+    "EXPLORE",
+    "ENJOY",
+    "DISCOVER",
+    "FEEL",
+    "RUSSIAN"
+].reverse();
+
+nextMsg();
+</script>
 </body>
 </html>

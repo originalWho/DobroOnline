@@ -1,6 +1,8 @@
 package dobro.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Set;
 
 /**
@@ -13,8 +15,18 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
+    @Column(unique = true)
+    @Size(min = 3, max = 16)
+    @NotNull
     private String username;
 
+    @Column(unique = true)
+    @Size(min = 6, max = 30)
+    @NotNull
+    private String email;
+
+    @Size(min = 8, max = 25)
+    @NotNull
     private String password;
 
     @ManyToMany
@@ -55,5 +67,13 @@ public class User {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
