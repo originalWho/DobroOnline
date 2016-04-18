@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ac236103-9565-4d09-ad15-6786f28ef908" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dobro/service/LessonService.java" afterPath="$PROJECT_DIR$/src/main/java/dobro/service/LessonService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dobro/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/dobro/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dobro/service/WordService.java" afterPath="$PROJECT_DIR$/src/main/java/dobro/service/WordService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dobro/service/LessonServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dobro/service/LessonServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dobro/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dobro/service/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dobro/service/WordServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dobro/service/WordServiceImpl.java" />
     </list>
     <ignored path="DobroOnline.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WordService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dobro/service/WordService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5660377">
+            <state vertical-scroll-proportion="0.0">
               <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
               <folding />
             </state>
@@ -67,20 +67,47 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/dobro/service/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+              <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#481#482#0" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#574#575#0" expanded="true" />
+                <element signature="e#615#616#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#714#715#0" expanded="true" />
+                <element signature="e#767#768#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#862#863#0" expanded="true" />
+                <element signature="e#897#898#0" expanded="true" />
+                <element signature="e#952#953#0" expanded="true" />
+                <element signature="e#989#990#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WordServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dobro/service/WordServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-              <folding />
+            <state vertical-scroll-proportion="1.1320754">
+              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+              <folding>
+                <element signature="e#391#392#0" expanded="true" />
+                <element signature="e#431#432#0" expanded="true" />
+                <element signature="e#481#482#0" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#574#575#0" expanded="true" />
+                <element signature="e#615#616#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#714#715#0" expanded="true" />
+                <element signature="e#767#768#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#862#863#0" expanded="true" />
+                <element signature="e#897#898#0" expanded="true" />
+                <element signature="e#952#953#0" expanded="true" />
+                <element signature="e#989#990#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,10 +116,22 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/dobro/service/LessonServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
               <folding>
-                <element signature="e#382#383#0" expanded="true" />
-                <element signature="e#426#427#0" expanded="true" />
+                <element signature="e#409#410#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#543#544#0" expanded="true" />
+                <element signature="e#604#605#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#708#709#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#812#813#0" expanded="true" />
+                <element signature="e#851#852#0" expanded="true" />
+                <element signature="e#913#914#0" expanded="true" />
+                <element signature="e#950#951#0" expanded="true" />
+                <element signature="e#1011#1012#0" expanded="true" />
+                <element signature="e#1052#1053#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -211,17 +250,17 @@
         <option value="$PROJECT_DIR$/src/main/java/dobro/model/Word.java" />
         <option value="$PROJECT_DIR$/src/main/java/dobro/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/dobro/model/Role.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dobro/service/WordServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dobro/service/LessonServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dobro/repository/LessonRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/dobro/DobroOnlineApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/dobro/configuration/JpaConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/dobro/controller/LessonController.java" />
         <option value="$PROJECT_DIR$/src/main/java/dobro/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dobro/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dobro/service/LessonService.java" />
         <option value="$PROJECT_DIR$/src/main/java/dobro/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/dobro/service/WordService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dobro/service/LessonServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dobro/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dobro/service/WordServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -1040,7 +1079,7 @@
       <option name="number" value="Default" />
       <updated>1460987177333</updated>
       <workItem from="1460987180150" duration="7901000" />
-      <workItem from="1460996482430" duration="8592000" />
+      <workItem from="1460996482430" duration="8839000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1460988790172</created>
@@ -1078,11 +1117,17 @@
       <option name="project" value="LOCAL" />
       <updated>1461005096408</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Created interface methods in services">
+      <created>1461005850989</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1461005850989</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16493000" />
+    <option name="totallyTimeSpent" value="16740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
@@ -1133,7 +1178,8 @@
     <MESSAGE value="SecurityConfig basic configuration; added homeController, home page, temporarily deleted sets&lt;~&gt; from Role, User" />
     <MESSAGE value="Added getter-setters to User, Role; configured @ManyToMany" />
     <MESSAGE value="Autowired repos to services, services to controllers; added JpaConfig" />
-    <option name="LAST_COMMIT_MESSAGE" value="Autowired repos to services, services to controllers; added JpaConfig" />
+    <MESSAGE value="Created interface methods in services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created interface methods in services" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1508,35 +1554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dobro/service/LessonServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dobro/service/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dobro/service/WordServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dobro/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1579,9 +1596,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dobro/service/WordService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5660377">
+        <state vertical-scroll-proportion="0.0">
           <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dobro/service/LessonServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+          <folding>
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#1011#1012#0" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dobro/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dobro/service/WordServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1320754">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding>
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
