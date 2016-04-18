@@ -1,6 +1,6 @@
-package repo;
+package dobro.repository;
 
-import model.Role;
+import dobro.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

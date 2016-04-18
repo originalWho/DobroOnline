@@ -1,7 +1,7 @@
-package service;
+package dobro.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import repo.LessonRepo;
+import dobro.repository.LessonRepo;
 
 /**
  * Created by Artur on 4/18/16.

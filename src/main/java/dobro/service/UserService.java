@@ -1,4 +1,4 @@
-package service;
+package dobro.service;
 
 /**
  * Created by Artur on 4/18/16.

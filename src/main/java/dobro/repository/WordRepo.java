@@ -1,6 +1,6 @@
-package repo;
+package dobro.repository;
 
-import model.Word;
+import dobro.model.Word;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

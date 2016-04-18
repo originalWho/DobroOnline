@@ -1,4 +1,4 @@
-package controller;
+package dobro.controller;
 
 import org.springframework.stereotype.Controller;
 
@@ -6,5 +6,5 @@ import org.springframework.stereotype.Controller;
  * Created by Artur on 4/18/16.
  */
 @Controller
-public class UserController {
+public class LessonController {
 }

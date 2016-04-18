@@ -1,4 +1,4 @@
-package model;
+package dobro.model;
 
 import javax.persistence.*;
 
