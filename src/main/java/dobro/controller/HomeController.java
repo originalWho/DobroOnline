@@ -1,18 +1,18 @@
 package dobro.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * Created by Artur on 4/18/16.
  */
 @Controller
+@RequestMapping("/")
 public class HomeController {
 
-    @RequestMapping(value = "/")
-    public String home(Model model){
+    @RequestMapping(method = RequestMethod.GET)
+    public String home(){
         return "home";
     }
-
 }

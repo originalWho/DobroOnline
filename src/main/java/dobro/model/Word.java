@@ -15,4 +15,7 @@ public class Word {
     private Integer version;
 
     private Integer wordId;
+
+    private String word;
+
 }
