@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac236103-9565-4d09-ad15-6786f28ef908" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dobro/service/UserDetailsServiceImpl.java" />
+    <list default="true" id="ac236103-9565-4d09-ad15-6786f28ef908" name="Default" comment="Configured authenticationProvider in SecurityConfig">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dobro/configuration/SecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/dobro/configuration/SecurityConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dobro/repository/UserRepo.java" afterPath="$PROJECT_DIR$/src/main/java/dobro/repository/UserRepo.java" />
     </list>
     <ignored path="DobroOnline.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,16 +98,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dobro/configuration/WebConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserRepo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dobro/repository/UserRepo.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -123,12 +111,26 @@
       <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dobro/configuration/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8742138">
-              <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.2813793">
+              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1585#1586#0" expanded="true" />
-                <element signature="e#1637#1638#0" expanded="true" />
+                <element signature="method#setUserDetailsService#0;class#SecurityConfig#0" expanded="false" />
+                <element signature="e#1953#1954#0" expanded="true" />
+                <element signature="e#2005#2006#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DobroOnlineApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dobro/DobroOnlineApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <folding>
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#304#305#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,7 +140,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/dobro/service/UserDetailsServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#792#793#0" expanded="true" />
@@ -1111,7 +1113,7 @@
       <option name="number" value="Default" />
       <updated>1460987177333</updated>
       <workItem from="1460987180150" duration="7901000" />
-      <workItem from="1460996482430" duration="25864000" />
+      <workItem from="1460996482430" duration="26727000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1460988790172</created>
@@ -1179,11 +1181,17 @@
       <option name="project" value="LOCAL" />
       <updated>1461067662937</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Impemented UserDetailsService, added it SecurityConfig auth configuration">
+      <created>1461068966966</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1461068966966</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33765000" />
+    <option name="totallyTimeSpent" value="34628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
@@ -1196,7 +1204,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5062696" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.4937304" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1239,7 +1247,9 @@
     <MESSAGE value="Designed homepage, added POST method to HomeController, added CSS" />
     <MESSAGE value="HomeController deleted, its methods are moved to UserController; form validation of quick register implemented" />
     <MESSAGE value="Password encryption added, max size of password abandoned; crsf temporarily disabled" />
-    <option name="LAST_COMMIT_MESSAGE" value="Password encryption added, max size of password abandoned; crsf temporarily disabled" />
+    <MESSAGE value="Impemented UserDetailsService, added it SecurityConfig auth configuration" />
+    <MESSAGE value="Configured authenticationProvider in SecurityConfig" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configured authenticationProvider in SecurityConfig" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1498,14 +1508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dobro/DobroOnlineApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dobro/configuration/JpaConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1684,10 +1686,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dobro/DobroOnlineApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dobro/service/UserDetailsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#792#793#0" expanded="true" />
@@ -1698,12 +1711,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dobro/configuration/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8742138">
-          <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.2813793">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1585#1586#0" expanded="true" />
-            <element signature="e#1637#1638#0" expanded="true" />
+            <element signature="method#setUserDetailsService#0;class#SecurityConfig#0" expanded="false" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="e#2005#2006#0" expanded="true" />
           </folding>
         </state>
       </provider>
