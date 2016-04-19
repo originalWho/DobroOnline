@@ -11,6 +11,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 /**
  * Created by Artur on 4/18/16.
@@ -29,16 +30,22 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
+                    .antMatchers("/dashboard").hasRole("USER")
                     .anyRequest().permitAll()
                     .and()
-                .csrf()
-                    .disable()
                 .formLogin()
                     .loginPage("/signin")
                     .defaultSuccessUrl("/dashboard")
                     .permitAll()
                     .and()
-                .httpBasic();
+                .httpBasic()
+                    .and()
+                .logout()
+                    .invalidateHttpSession(true)
+                    .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+                    .logoutSuccessUrl("/")
+                    .deleteCookies("JSESSIONID")
+                    .permitAll();
     }
 
 
