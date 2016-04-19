@@ -19,17 +19,22 @@
     <span id="message">RUSSIAN</span>
 </div>
 <div style="width:20%; margin-right: 10%; margin-top: 20%; float: right">
-    <form role="form" action="#" th:action="@{/}" th:object="${user}" method="post">
+    <form action="#" th:action="@{/}" role="form" th:object="${user}" method="post">
+        <input type="hidden" th:field="*{id}"/>
+        <div th:if="${#fields.hasErrors()}" class="alert alert-danger"><strong>Invalid data</strong></div>
         <div class="form-group">
-            <input type="text" class="form-control" id="usr" placeholder="Name"/>
+            <input type="text" class="form-control" id="usr" placeholder="Name" th:field="*{username}"/>
+            <span th:if="${#fields.hasErrors('username')}" th:errors="*{username}" class="text-warning">Invalid name</span>
         </div>
 
         <div class="form-group">
-            <input type="email" class="form-control" id="email" placeholder="E-mail"/>
+            <input type="email" class="form-control" id="email" placeholder="E-mail" th:field="*{email}"/>
+            <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="text-warning">Invalid e-mail</span>
         </div>
 
         <div class="form-group">
-            <input type="password" class="form-control" id="pwd" placeholder="Password"/>
+            <input type="password" class="form-control" id="pwd" placeholder="Password" th:field="*{password}"/>
+            <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}" class="text-warning">Invalid password</span>
         </div>
 
         <button type="submit" class="btn btn-default">Join for free</button>
