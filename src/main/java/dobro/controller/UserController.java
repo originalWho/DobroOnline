@@ -3,7 +3,6 @@ package dobro.controller;
 import dobro.model.User;
 import dobro.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -11,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.validation.Valid;
+import java.security.Principal;
 
 /**
  * Created by Artur on 4/18/16.
@@ -40,8 +40,9 @@ public class UserController {
     }
 
     @RequestMapping(value = "/dashboard", method = RequestMethod.GET)
-    public String dashboard(UserDetails userDetails, Model model) {
-        model.addAttribute("user.username", userDetails.getUsername());
+    public String dashboard(Principal principal, Model model) {
+        String name = principal.getName();
+        model.addAttribute("name", name);
         return "dashboard";
     }
 
