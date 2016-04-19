@@ -34,6 +34,12 @@ public class UserController {
             return "home";
         }
         userService.saveUser(user);
-        return "redirect:/";
+        return "redirect:/dashboard";
+    }
+
+    @RequestMapping(value = "/dashboard", method = RequestMethod.GET)
+    public String dashboard() {
+
+        return "dashboard";
     }
 }

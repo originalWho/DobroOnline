@@ -3,6 +3,7 @@ package dobro.service;
 import dobro.model.User;
 import dobro.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 /**
@@ -11,6 +12,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements UserService {
     private UserRepo userRepo;
+
+    private PasswordEncoder encoder;
+
+    @Autowired
+    public void setEncoder(PasswordEncoder encoder) {
+        this.encoder = encoder;
+    }
 
     @Autowired
     public void setUserRepo(UserRepo userRepo) {
@@ -34,6 +42,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void saveUser(User user) {
+        user.setPassword(encoder.encode(user.getPassword()));
         userRepo.save(user);
     }
 

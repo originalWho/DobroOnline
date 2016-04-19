@@ -25,7 +25,7 @@ public class User {
     @NotNull
     private String email;
 
-    @Size(min = 8, max = 25)
+    @Size(min = 8)
     @NotNull
     private String password;
 
