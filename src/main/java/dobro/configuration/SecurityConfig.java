@@ -28,14 +28,28 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .authorizeRequests().anyRequest().permitAll()
-                .and().csrf().disable();
+                .authorizeRequests()
+                    .anyRequest().permitAll()
+                    .and()
+                .csrf()
+                    .disable()
+                .formLogin()
+                    .loginPage("/signin")
+                    .defaultSuccessUrl("/dashboard")
+                    .permitAll()
+                    .and()
+                .httpBasic();
     }
+
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
-                .authenticationProvider(authProvider());
+                //.authenticationProvider(authProvider())
+                .inMemoryAuthentication()
+                    .withUser("user")
+                    .password("helloworld")
+                    .roles("USER");
     }
 
     public DaoAuthenticationProvider authProvider() {

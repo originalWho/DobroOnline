@@ -24,3 +24,8 @@ video {
     html { background: url(//demosthenes.info/assets/images/polina.jpg) #000 no-repeat center center fixed; }
     #bgvid { display: none; }
 }
+
+.homelink {
+    color: white;
+    text-decoration: underline;
+}

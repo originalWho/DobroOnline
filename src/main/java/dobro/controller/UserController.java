@@ -42,4 +42,9 @@ public class UserController {
 
         return "dashboard";
     }
+
+    @RequestMapping(value = "/signin")
+    public String signIn() {
+        return "signin";
+    }
 }
