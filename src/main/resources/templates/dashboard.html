@@ -8,5 +8,14 @@
 <body>
     <div>Hello, <span th:text="${name}">username</span></div>
     <div><a href="/" th:href="@{/logout}">Sign out</a></div>
+
+    <div class="container" th:if="${not #lists.isEmpty(lessons)}">
+        <h2>Lessons</h2>
+        <div th:each="lesson : ${lessons}">
+            Id: <span th:text="${lesson.id}">Id</span> |
+            LessonId: <span th:text="${lesson.lessonId}"></span> |
+            <a th:href="${ '/lesson/' + lesson.id}">Start</a>
+        </div>
+    </div>
 </body>
 </html>

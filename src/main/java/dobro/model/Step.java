@@ -19,6 +19,7 @@ public class Step {
     @ManyToMany(mappedBy = "steps")
     private List<Word> wordList;
     private String correctAnswer;
+    private String view;
     private boolean isPassed;
     private boolean isEnabled;
 
@@ -60,6 +61,14 @@ public class Step {
 
     public void setCorrectAnswer(String correctAnswer) {
         this.correctAnswer = correctAnswer;
+    }
+
+    public String getView() {
+        return view;
+    }
+
+    public void setView(String view) {
+        this.view = view;
     }
 
     public boolean isEnabled() {

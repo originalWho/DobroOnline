@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Lesson | Dobro</title>
+    <!--/*/ <th:block th:include="fragments/header :: head"></th:block> /*/-->
+</head>
+<body>
+    <h1>Nothing yet!</h1>
+    Steps: <span th:text="${size}"></span>
+    <div class="container" th:if="${not #lists.isEmpty(steps)}">
+        <h2>Steps</h2>
+        <div th:each="step : ${steps}">
+            Id: <span th:text="${step.id}">Id</span> |
+        </div>
+    </div>
+    <div class="container" th:if="${not #lists.isEmpty(words)}">
+        <h2>Words</h2>
+        <div th:each="word : ${words}">
+            Word: <span th:text="${word.word}">Word</span> |
+        </div>
+    </div>
+</body>
+</html>
