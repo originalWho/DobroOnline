@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Step</title>
+    <!--/*/ <th:block th:include="fragments/header :: head"></th:block> /*/-->
+</head>
+<body>
+<div class="container" th:if="${not #lists.isEmpty(words)}">
+    <h2>Words</h2>
+    <div th:each="word : ${words}">
+        Word: <span th:text="${word.word}">Word</span>
+    </div>
+</div>
+</body>
+</html>

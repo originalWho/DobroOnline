@@ -12,13 +12,9 @@
         <h2>Steps</h2>
         <div th:each="step : ${steps}">
             Id: <span th:text="${step.id}">Id</span> |
+            <a th:href="${lessonId + '/step/' + step.id}">Start</a>
         </div>
     </div>
-    <div class="container" th:if="${not #lists.isEmpty(words)}">
-        <h2>Words</h2>
-        <div th:each="word : ${words}">
-            Word: <span th:text="${word.word}">Word</span> |
-        </div>
-    </div>
+
 </body>
 </html>

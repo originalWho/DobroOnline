@@ -32,7 +32,7 @@ public class LessonController {
 
     @RequestMapping("/lesson/{id}")
     public String showLesson(@PathVariable Integer id, Model model) {
-        model.addAttribute("words", lessonService.getLessonById(id).getStepList().get(0).getWordList());
+        model.addAttribute("lessonId", id);
         model.addAttribute("size", lessonService.getLessonById(id).getStepList().size());
         model.addAttribute("steps", lessonService.getLessonById(id).getStepList());
         return "lesson";
