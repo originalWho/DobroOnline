@@ -11,6 +11,8 @@ public interface UserService {
 
     User getUserById(Integer id);
 
+    User getUserByEmail(String email);
+
     void saveUser(User user) throws EmailExistsException;
 
     void deleteUserById(Integer id);

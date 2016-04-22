@@ -1,6 +1,7 @@
 package dobro.controller;
 
 import dobro.service.LessonService;
+import dobro.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,6 +17,12 @@ import java.security.Principal;
 @Controller
 public class LessonController {
     private LessonService lessonService;
+    private UserService userService;
+
+    @Autowired
+    public void setUserService(UserService userService) {
+        this.userService = userService;
+    }
 
     @Autowired
     public void setLessonService(LessonService lessonService) {
@@ -24,7 +31,8 @@ public class LessonController {
 
     @RequestMapping(value = "/dashboard", method = RequestMethod.GET)
     public String dashboard(Principal principal, Model model) {
-        String name = principal.getName();
+        String email = principal.getName();
+        String name = userService.getUserByEmail(email).getUsername();
         model.addAttribute("name", name);
         model.addAttribute("lessons", lessonService.getAllLessons());
         return "dashboard";

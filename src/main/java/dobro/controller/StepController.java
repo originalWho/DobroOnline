@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * Created by Artur on 4/20/16.
@@ -20,10 +21,23 @@ public class StepController {
         this.stepService = stepService;
     }
 
-    @RequestMapping("/{id}")
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public String showStep(@PathVariable Integer id, Model model) {
         model.addAttribute("stepId", id);
+        model.addAttribute("wordStrings", stepService.getStepById(id).getStrings());
         model.addAttribute("words", stepService.getStepById(id).getWordList());
+        return "stepword";
+    }
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.POST)
+    public String nextStep(@PathVariable Integer id, Model model) {
+        try {
+            stepService.getStepById(id).setPassed(true);
+        } catch (Exception e) {
+            stepService.getStepById(id-1).setPassed(true);
+            stepService.getStepById(id-1).getOwner().setPassed(true);
+            return "redirect:/dashboard";
+        }
         return "stepword";
     }
 }

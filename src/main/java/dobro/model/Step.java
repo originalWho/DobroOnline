@@ -1,6 +1,7 @@
 package dobro.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -85,5 +86,12 @@ public class Step {
 
     public void setPassed(boolean passed) {
         isPassed = passed;
+    }
+
+    public List<String> getStrings() {
+        List<String> list = new ArrayList<>();
+        for (Word word : wordList)
+            list.add(word.toString());
+        return list;
     }
 }

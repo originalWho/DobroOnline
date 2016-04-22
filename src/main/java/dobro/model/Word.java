@@ -80,4 +80,9 @@ public class Word {
     public void setWordId(Integer wordId) {
         this.wordId = wordId;
     }
+
+    @Override
+    public String toString() {
+        return word;
+    }
 }

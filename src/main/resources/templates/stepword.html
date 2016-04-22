@@ -4,7 +4,22 @@
     <meta charset="UTF-8"/>
     <title>Step | Dobro</title>
     <!--/*/ <th:block th:include="fragments/header :: head"></th:block> /*/-->
-
+    <script th:inline="javascript">
+        function changeClass() {
+            document.getElementById("nextButton").className = "btn btn-success";
+        }
+        window.onload = function() {
+            document.getElementById("nextButton").addEventListener('click', changeClass);
+            appear();
+        }
+        function appear() {
+            $('#theWord').html(wordList[0]);
+        }
+        // <![CDATA[
+        var wordList = /*[[${wordStrings}]]*/ [];
+        // ]]>
+        appear();
+    </script>
 </head>
 <body>
     <h1 style="margin-left: 5%">Step #<span th:text="${stepId}">id</span></h1>
@@ -23,7 +38,12 @@
         </table>
     </div>
     <div align="center" style="margin-top: 5%">
-        <h2>Word</h2>
+        <h2 id="theWord">Word</h2>
     </div>
+    <form method="post" th:action="@{${stepId}+1}" style="margin-top: 10%; margin-left: 90%;">
+        <div>
+            <button type="submit" class="btn btn-default" id="nextButton">Next</button>
+        </div>
+    </form>
 </body>
 </html>
