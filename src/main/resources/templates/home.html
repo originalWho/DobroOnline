@@ -3,6 +3,28 @@
 <head>
     <title>Dobro</title>
     <!--/*/ <th:block th:include="fragments/header :: head"></th:block> /*/-->
+    <script>
+        function nextMsg() {
+            var msg = messages.pop();
+            if (msg == messages[messages.length - 1]) {
+                $('#message').html("DOBRO").fadeIn(200);
+            } else {
+                $('#message').html(msg).fadeIn(300).delay(2000).fadeOut(200, nextMsg);
+            }
+        }
+
+        var messages = [
+            "LEARN",
+            "IMMERSE",
+            "EXPLORE",
+            "ENJOY",
+            "DISCOVER",
+            "FEEL",
+            "RUSSIAN"
+        ].reverse();
+
+        nextMsg();
+    </script>
 </head>
 <body>
 
@@ -41,27 +63,6 @@
     </form>
 </div>
 
-<script>
-function nextMsg() {
-    var msg = messages.pop();
-    if (msg == messages[messages.length - 1]) {
-        $('#message').html("DOBRO").fadeIn(200);
-    } else {
-        $('#message').html(msg).fadeIn(300).delay(2000).fadeOut(200, nextMsg);
-    }
-}
 
-var messages = [
-    "LEARN",
-    "IMMERSE",
-    "EXPLORE",
-    "ENJOY",
-    "DISCOVER",
-    "FEEL",
-    "RUSSIAN"
-].reverse();
-
-nextMsg();
-</script>
 </body>
 </html>

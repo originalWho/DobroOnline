@@ -2,6 +2,7 @@ package dobro.controller;
 
 import dobro.model.User;
 import dobro.service.UserService;
+import dobro.validation.EmailExistsException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -30,10 +31,14 @@ public class UserController {
     @RequestMapping(value = "/", method = RequestMethod.POST)
     public String checkForm(@Valid User user, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
-            System.out.println("Form has errors");
             return "home";
         }
-        userService.saveUser(user);
+        try {
+            userService.saveUser(user);
+        } catch (EmailExistsException e) {
+
+            return "home";
+        }
         return "redirect:/dashboard";
     }
 

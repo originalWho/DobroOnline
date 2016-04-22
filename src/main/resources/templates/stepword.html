@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Step | Dobro</title>
+    <!--/*/ <th:block th:include="fragments/header :: head"></th:block> /*/-->
+
+</head>
+<body>
+    <h1 style="margin-left: 5%">Step #<span th:text="${stepId}">id</span></h1>
+    <div th:if="${not #lists.isEmpty(words)}">
+        <table class="table-bordered" style="border-collapse: separate; border-spacing: 30px 0; border: 0">
+            <tr>
+                <td th:each="word : ${words}" style="padding: 10px 0">
+                    <img th:src="${word.imageUrl}"/>
+                </td>
+            </tr>
+            <tr>
+                <td th:each="word : ${words}" align="center" style="padding: 10px 0">
+                    <h4 th:text="${word.word}">word</h4>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div align="center" style="margin-top: 5%">
+        <h2>Word</h2>
+    </div>
+</body>
+</html>

@@ -1,7 +1,7 @@
 package dobro.model;
 
 import javax.persistence.*;
-import java.util.Set;
+import java.util.Collection;
 
 /**
  * Created by Artur on 4/18/16.
@@ -16,7 +16,7 @@ public class Role {
     private String name;
 
     @ManyToMany(mappedBy = "roles")
-    private Set<User> users;
+    private Collection<User> users;
 
     public Integer getId() {
         return id;
@@ -34,11 +34,11 @@ public class Role {
         this.name = name;
     }
 
-    public Set<User> getUsers() {
+    public Collection<User> getUsers() {
         return users;
     }
 
-    public void setUsers(Set<User> users) {
+    public void setUsers(Collection<User> users) {
         this.users = users;
     }
 }

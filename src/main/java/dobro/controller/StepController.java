@@ -22,7 +22,8 @@ public class StepController {
 
     @RequestMapping("/{id}")
     public String showStep(@PathVariable Integer id, Model model) {
+        model.addAttribute("stepId", id);
         model.addAttribute("words", stepService.getStepById(id).getWordList());
-        return "stepbasic";
+        return "stepword";
     }
 }

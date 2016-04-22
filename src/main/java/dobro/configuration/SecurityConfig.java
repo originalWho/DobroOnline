@@ -30,7 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                    .antMatchers("/dashboard").hasRole("USER")
+                    .antMatchers("/dashboard").hasAnyAuthority("USER", "ADMIN")
                     .anyRequest().permitAll()
                     .and()
                 .formLogin()
@@ -66,7 +66,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
-                //.authenticationProvider(authProvider())
+                .authenticationProvider(authProvider())
                 .inMemoryAuthentication()
                     .withUser("user")
                     .password("helloworld")
